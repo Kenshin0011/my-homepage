@@ -19,4 +19,7 @@ export default defineConfig({
     hmr: { host: 'localhost' },
   },
   base: '/my-homepage/',
+  build: {
+    outDir: 'dist'
+  }
 })

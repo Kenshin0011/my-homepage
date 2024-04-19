@@ -7,15 +7,11 @@
 
 <script>
 import HeaderComponent from './components/HeaderComponent.vue'
-import ContactComponent from "@/components/ContactComponent.vue";
 import HomeComponent from "@/components/HomeComponent.vue";
-import BodyComponent from "@/components/BodyComponent.vue";
 
 export default {
   components: {
-    BodyComponent,
     HomeComponent,
-    ContactComponent,
     HeaderComponent,
 
   },

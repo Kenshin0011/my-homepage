@@ -10,7 +10,7 @@
         :key="i"
     >
       <v-sheet
-          :style="`background-image: url('${slide}'); background-size: cover; background-position: center;`"
+          :style="`background-image: url(${slide}); background-size: cover; background-position: center;`"
           height="100%"
           width="100vw"
       >
@@ -29,10 +29,10 @@ export default {
   data () {
     return {
       slides: [
-        '../../public/images/1.JPG',
-        '../../public/images/2.JPG',
-        '../../public/images/3.jpg',
-        '../../public/images/4.jpg',
+        './public/images/1.JPG',
+        './public/images/2.JPG',
+        './public/images/3.jpg',
+        './public/images/4.jpg',
       ],
     }
   },

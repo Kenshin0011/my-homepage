@@ -57,13 +57,18 @@ export default {
 
 <style scoped>
 .header-container {
-  padding: 0;
+    height: 60px;
 }
 
 .title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+}
+
+.v-application .v-app-bar {
+    padding-top: 0;
+    margin-top: -8px;
 }
 </style>

@@ -49,6 +49,6 @@ export default {
     height: 100%;
 }
 .name {
-    color: #ffffff;
+  color: #ffffff;
 }
 </style>

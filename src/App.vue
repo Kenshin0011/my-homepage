@@ -1,6 +1,9 @@
 <template>
   <v-app>
-    <HeaderComponent @navigate="scrollTo"/>
+    <HeaderComponent
+        @navigate="scrollTo"
+        :is-mobile-screen="isMobileScreen"
+    />
     <HomeComponent/>
   </v-app>
 </template>
@@ -13,7 +16,11 @@ export default {
   components: {
     HomeComponent,
     HeaderComponent,
-
+  },
+  computed: {
+    isMobileScreen() {
+      return this.$vuetify.display.smAndDown;
+    },
   },
   methods: {
     scrollTo(section) {

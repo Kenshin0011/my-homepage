@@ -6,7 +6,7 @@
           :bg-color="color"
           mode="shift"
       >
-        <div class="title lg">Kenshin's Portfolio</div>
+        <div class="title lg text-bold" :class="{ 'md': isMobileScreen }">Kenshin's Portfolio</div>
         <v-spacer></v-spacer>
         <v-btn @click="$emit('navigate', 'home')">
           <v-icon>mdi-home-circle</v-icon>
@@ -35,6 +35,9 @@
 
 <script>
 export default {
+  props: {
+    isMobileScreen: { type: Boolean, required: true },
+  },
   data() {
     return {
       value: 0
@@ -57,18 +60,19 @@ export default {
 
 <style scoped>
 .header-container {
-    height: 60px;
+  height: 60px;
 }
 
 .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  padding: 16px;
 }
 
 .v-application .v-app-bar {
-    padding-top: 0;
-    margin-top: -8px;
+  padding-top: 0;
+  margin-top: -8px;
 }
 </style>

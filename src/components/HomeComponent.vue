@@ -4,7 +4,7 @@
         cycle
         height="300"
         hide-delimiter-background
-        show-arrows-on-hover="true"
+        show-arrows="hover"
     >
       <v-carousel-item
           v-for="(slide, i) in slides"

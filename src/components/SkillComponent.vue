@@ -88,7 +88,7 @@ export default {
         },
         {
           img: './images/skills/mysql.png',
-          title: 'mysql',
+          title: 'MySQL',
         },
         {
           img: './images/skills/java.png',

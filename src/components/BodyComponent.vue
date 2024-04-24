@@ -1,5 +1,5 @@
 <template>
-  <AboutComponent/>
+  <AboutComponent :is-mobile-screen="isMobileScreen"/>
   <AffiliationComponent/>
   <WorksComponent :is-mobile-screen="isMobileScreen"/>
   <SkillComponent/>

@@ -1,32 +1,34 @@
 <template>
   <div class="about-container" id="about">
     <div class="info">
-        <v-card class="card">
+        <v-card class="card" :class="{ 'mobile-card': isMobileScreen }">
           <v-toolbar color="transparent">
             <v-toolbar-title class="title" text="About"/>
           </v-toolbar>
-          <div class="card-body">
-            <v-card-text class="card-text">
-              <v-timeline align="start" density="compact">
-                <v-timeline-item
-                    v-for="message in messages"
-                    :key="message.year"
-                    :dot-color="message.color"
-                    size="x-small"
-                >
-                  <div class="content">
-                    <div class="content-head text-bold md" :style="{ color: message.color }">
-                      {{ message.year }}
-                      {{ message.era }}
+          <div class="card-body" :class="{ 'mobile-card-body': isMobileScreen }">
+            <div>
+              <v-card-text class="card-text">
+                <v-timeline align="start" density="compact">
+                  <v-timeline-item
+                      v-for="message in messages"
+                      :key="message.year"
+                      :dot-color="message.color"
+                      size="x-small"
+                  >
+                    <div class="content">
+                      <div class="content-head text-bold md" :style="{ color: message.color }">
+                        {{ message.year }}
+                        {{ message.era }}
+                      </div>
+                      <div class="text-bold sm">{{ message.school }}</div>
+                      <ul class="card-message sm">
+                        <li v-for="(item, index) in formattedMessage(message.message)" :key="index" v-html="item"></li>
+                      </ul>
                     </div>
-                    <div class="text-bold sm">{{ message.school }}</div>
-                    <ul class="card-message sm">
-                      <li v-for="(item, index) in formattedMessage(message.message)" :key="index" v-html="item"></li>
-                    </ul>
-                  </div>
-                </v-timeline-item>
-              </v-timeline>
-            </v-card-text>
+                  </v-timeline-item>
+                </v-timeline>
+              </v-card-text>
+            </div>
             <div class="img">
               <v-avatar size="180px">
                 <img src="../../public/images/profile.png" alt="profile">
@@ -41,6 +43,9 @@
 
 <script>
 export default {
+  props: {
+    isMobileScreen: { type: Boolean, required: true },
+  },
   data () {
     return {
       messages: [
@@ -108,9 +113,16 @@ export default {
   margin: 0 auto;
 }
 
+.mobile-card {
+  width: 90%;
+}
+
 .card-body {
   display: flex;
-  flex-direction: row;
+}
+
+.mobile-card-body {
+  flex-direction: column;
 }
 
 .card-text {

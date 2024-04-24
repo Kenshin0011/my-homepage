@@ -6,32 +6,57 @@
           :bg-color="color"
           mode="shift"
       >
-        <div class="title lg text-bold" :class="{ 'md': isMobileScreen }">Kenshin's Portfolio</div>
-        <v-spacer></v-spacer>
-        <v-btn @click="$emit('navigate', 'home')">
-          <v-icon>mdi-home-circle</v-icon>
-          <span>Home</span>
-        </v-btn>
-        <v-btn @click="$emit('navigate', 'about')">
-          <v-icon>mdi-information</v-icon>
-          <span>About</span>
-        </v-btn>
-        <v-btn @click="$emit('navigate', 'affiliation')">
-          <v-icon>mdi-paw</v-icon>
-          <span>affiliation</span>
-        </v-btn>
-        <v-btn @click="$emit('navigate', 'works')">
-          <v-icon>mdi-laptop</v-icon>
-          <span>Works</span>
-        </v-btn>
-        <v-btn @click="$emit('navigate', 'skills')">
-          <v-icon>mdi-pen-plus</v-icon>
-          <span>Skills</span>
-        </v-btn>
-        <v-btn @click="$emit('navigate', 'contact')">
-          <v-icon>mdi-card-account-mail</v-icon>
-          <span>Contact</span>
-        </v-btn>
+        <div v-if="!isMobileScreen" class="container">
+          <div class="title lg text-bold">Kenshin's Portfolio</div>
+          <div class="button-container">
+            <v-btn @click="$emit('navigate', 'home')">
+              <v-icon>mdi-home-circle</v-icon>
+              <span>Home</span>
+            </v-btn>
+            <v-btn @click="$emit('navigate', 'about')">
+              <v-icon>mdi-information</v-icon>
+              <span>About</span>
+            </v-btn>
+            <v-btn @click="$emit('navigate', 'affiliation')">
+              <v-icon>mdi-paw</v-icon>
+              <span>affiliation</span>
+            </v-btn>
+            <v-btn @click="$emit('navigate', 'works')">
+              <v-icon>mdi-laptop</v-icon>
+              <span>Works</span>
+            </v-btn>
+            <v-btn @click="$emit('navigate', 'skills')">
+              <v-icon>mdi-pen-plus</v-icon>
+              <span>Skills</span>
+            </v-btn>
+            <v-btn @click="$emit('navigate', 'contact')">
+              <v-icon>mdi-card-account-mail</v-icon>
+              <span>Contact</span>
+            </v-btn>
+          </div>
+        </div>
+        <div v-else class="mobile-container">
+          <div class="button-container">
+            <v-btn density="compact" size="x-small" @click="$emit('navigate', 'home')">
+              <v-icon>mdi-home-circle</v-icon>
+            </v-btn>
+            <v-btn density="compact" size="x-small" @click="$emit('navigate', 'about')">
+              <v-icon>mdi-information</v-icon>
+            </v-btn>
+            <v-btn density="compact" size="x-small" @click="$emit('navigate', 'affiliation')">
+              <v-icon>mdi-paw</v-icon>
+            </v-btn>
+            <v-btn density="compact" size="x-small" @click="$emit('navigate', 'works')">
+              <v-icon>mdi-laptop</v-icon>
+            </v-btn>
+            <v-btn density="compact" size="x-small" @click="$emit('navigate', 'skills')">
+              <v-icon>mdi-pen-plus</v-icon>
+            </v-btn>
+            <v-btn density="compact" size="x-small" @click="$emit('navigate', 'contact')">
+              <v-icon>mdi-card-account-mail</v-icon>
+            </v-btn>
+          </div>
+        </div>
       </v-bottom-navigation>
     </v-app-bar>
   </div>
@@ -76,8 +101,31 @@ export default {
   padding: 16px;
 }
 
+.mobile-title {
+  width: 80px;
+  padding: 12px;
+}
+
 .v-application .v-app-bar {
   padding-top: 0;
   margin-top: -8px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.mobile-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
 }
 </style>

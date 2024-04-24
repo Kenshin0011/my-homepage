@@ -1,5 +1,5 @@
 <template>
-  <div class="header-container">
+  <div class="header-container" id="home">
     <v-app-bar>
       <v-bottom-navigation
           v-model="value"
@@ -60,7 +60,7 @@ export default {
 
 <style scoped>
 .header-container {
-  height: 60px;
+  height: 56px;
 }
 
 .title {

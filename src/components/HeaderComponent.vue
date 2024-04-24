@@ -20,7 +20,7 @@
           <v-icon>mdi-laptop</v-icon>
           <span>Work</span>
         </v-btn>
-        <v-btn @click="$emit('navigate', 'skill')">
+        <v-btn @click="$emit('navigate', 'skills')">
           <v-icon>mdi-pen-plus</v-icon>
           <span>Skills</span>
         </v-btn>

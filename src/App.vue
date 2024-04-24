@@ -7,6 +7,7 @@
       />
       <HomeComponent />
       <BodyComponent />
+      <ContactComponent />
     </div>
   </v-app>
 </template>
@@ -15,9 +16,11 @@
 import HeaderComponent from './components/HeaderComponent.vue'
 import HomeComponent from "./components/HomeComponent.vue";
 import BodyComponent from "./components/BodyComponent.vue";
+import ContactComponent from "@/components/ContactComponent.vue";
 
 export default {
   components: {
+    ContactComponent,
     BodyComponent,
     HomeComponent,
     HeaderComponent,

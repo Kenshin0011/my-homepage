@@ -51,127 +51,127 @@ export default {
       panel: [0, 1, 2],
       mySkills: [
         {
-          img: './public/images/skills/vue.png',
+          img: './images/skills/vue.png',
           title: 'Vue.js',
         },
         {
-          img: './public/images/skills/laravel.png',
+          img: './images/skills/laravel.png',
           title: 'Laravel',
         },
         {
-          img: './public/images/skills/html.png',
+          img: './images/skills/html.png',
           title: 'html',
         },
         {
-          img: './public/images/skills/css.png',
+          img: './images/skills/css.png',
           title: 'css',
         },
         {
-          img: './public/images/skills/javascript.png',
+          img: './images/skills/javascript.png',
           title: 'javascript',
         },
         {
-          img: './public/images/skills/c.png',
+          img: './images/skills/c.png',
           title: 'C言語',
         },
         {
-          img: './public/images/skills/python.png',
+          img: './images/skills/python.png',
           title: 'python',
         },
         {
-          img: './public/images/skills/flask.png',
+          img: './images/skills/flask.png',
           title: 'flask',
         },
         {
-          img: './public/images/skills/gpt.png',
+          img: './images/skills/gpt.png',
           title: 'GPT API',
         },
         {
-          img: './public/images/skills/mysql.png',
+          img: './images/skills/mysql.png',
           title: 'mysql',
         },
         {
-          img: './public/images/skills/java.png',
+          img: './images/skills/java.png',
           title: 'Java',
         },
       ],
       normalSkills: [
         {
-          img: './public/images/skills/slack-api.png',
+          img: './images/skills/slack-api.png',
           title: 'Slack API',
         },
         {
-          img: './public/images/skills/docker.png',
+          img: './images/skills/docker.png',
           title: 'Docker',
         },
         {
-          img: './public/images/skills/unity.png',
+          img: './images/skills/unity.png',
           title: 'Unity',
         },
         {
-          img: './public/images/skills/aws.png',
+          img: './images/skills/aws.png',
           title: 'AWS',
         },
         {
-          img: './public/images/skills/aws-lambda.png',
+          img: './images/skills/aws-lambda.png',
           title: 'Lambda',
         },
         {
-          img: './public/images/skills/figma.png',
+          img: './images/skills/figma.png',
           title: 'Figma',
         },
         {
-          img: './public/images/skills/fast-api.png',
+          img: './images/skills/fast-api.png',
           title: 'Fast API',
         },
         {
-          img: './public/images/skills/jupyter.png',
+          img: './images/skills/jupyter.png',
           title: 'Jupyter',
         },
         {
-          img: './public/images/skills/langchain.png',
+          img: './images/skills/langchain.png',
           title: 'Lang Chain',
         },
         {
-          img: './public/images/skills/jquery.png',
+          img: './images/skills/jquery.png',
           title: 'jQuery',
         },
         {
-          img: './public/images/skills/cakephp.png',
+          img: './images/skills/cakephp.png',
           title: 'Cake PHP',
         },
         {
-          img: './public/images/skills/dynamodb.png',
+          img: './images/skills/dynamodb.png',
           title: 'Dynamo DB',
         },
         {
-          img: './public/images/skills/chroma.png',
+          img: './images/skills/chroma.png',
           title: 'Chroma',
         },
         {
-          img: './public/images/skills/ngrok.png',
+          img: './images/skills/ngrok.png',
           title: 'ngrok',
         },
         {
-          img: './public/images/skills/nginx.png',
+          img: './images/skills/nginx.png',
           title: 'nginx',
         },
         {
-          img: './public/images/skills/apache.png',
+          img: './images/skills/apache.png',
           title: 'Apache',
         },
       ],
       learningSkills: [
         {
-          img: './public/images/skills/react.png',
+          img: './images/skills/react.png',
           title: 'React',
         },
         {
-          img: './public/images/skills/go.png',
+          img: './images/skills/go.png',
           title: 'Go',
         },
         {
-          img: './public/images/skills/aws.png',
+          img: './images/skills/aws.png',
           title: 'AWS',
         },
       ]

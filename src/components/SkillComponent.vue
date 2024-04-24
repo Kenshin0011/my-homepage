@@ -183,6 +183,10 @@ export default {
           title: 'Raycast',
         },
         {
+          img: './images/skills/phpstorm.png',
+          title: 'PhpStorm',
+        },
+        {
           img: './images/skills/notion.png',
           title: 'Notion',
         },

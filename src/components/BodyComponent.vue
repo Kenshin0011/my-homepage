@@ -1,7 +1,7 @@
 <template>
   <AboutComponent/>
   <AffiliationComponent/>
-  <WorksComponent />
+  <WorksComponent :is-mobile-screen="isMobileScreen"/>
   <SkillComponent/>
 </template>
 
@@ -17,6 +17,9 @@ export default {
     SkillComponent,
     AffiliationComponent,
     AboutComponent
+  },
+  props: {
+    isMobileScreen: { type: Boolean, required: true },
   },
 }
 </script>

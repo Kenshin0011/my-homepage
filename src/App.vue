@@ -6,7 +6,7 @@
           :is-mobile-screen="isMobileScreen"
       />
       <HomeComponent />
-      <BodyComponent />
+      <BodyComponent :is-mobile-screen="isMobileScreen"/>
       <ContactComponent />
     </div>
   </v-app>

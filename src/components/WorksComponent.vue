@@ -2,7 +2,7 @@
   <div class="works-container" id="works">
     <div class="title text-bold lg">Works</div>
     <div class="works-list">
-      <div v-for="(card, i) in cards" :key="i" class="works-item">
+      <div v-for="(card, i) in cards" :key="i" class="works-item" :class="{ 'mobile-works-list': isMobileScreen }">
         <v-card
             class="mx-auto"
             max-width="400"
@@ -46,6 +46,9 @@
 
 <script>
 export default {
+  props: {
+    isMobileScreen: { type: Boolean, required: true },
+  },
   data () {
     return {
       cards: [
@@ -65,7 +68,7 @@ export default {
           content: 'Vue.jsとLaravelで開発\n' +
               'ソーシャルデータバンク株式会社のプロダクトの１つ\n' +
               '開発以外にもコードレビューや機能提案からの実装など幅広く担当し、Zennの執筆＋勉強会も開催した\n' +
-              '単体・機能テストやN+1問題など苦労した点もあったが、入社日以降一番コードを書いたこともあり、成果発表会で過去最高点でMVPを受賞',
+              '単体・機能テストやN+1問題など苦労した点もあったが、入社日以降メンバーの中で一番コードを書いたこともあり、成果発表会で過去最高点でMVPを受賞',
         },
         {
           img: 'portfolio.png',
@@ -73,8 +76,8 @@ export default {
           where: '個人開発',
           content: 'Vue.jsで作成\n' +
               '制作期間：約3日間\n' +
-              'htmlで作成でも良かったが、0からVueプロジェクトを作って見たかった\n' +
-              'またVuetifyを使ってスタイルを整えたかったことも要因の１つ',
+              'htmlでも良かったが、0からVueプロジェクトを作ってみたかった\n' +
+              'Vuetifyを使ってスタイルを整えたかったことも要因の１つ',
           github: 'https://github.com/Kenshin0011/my-homepage',
         },
         {
@@ -109,6 +112,11 @@ export default {
   flex-wrap: wrap;
   padding-top: 16px;
   margin-bottom: -40px;
+  width: 100%;
+}
+
+.mobile-works-list {
+  flex-basis: 100%;
 }
 
 .works-item {

@@ -17,8 +17,12 @@
           <span>About</span>
         </v-btn>
         <v-btn @click="$emit('navigate', 'affiliation')">
-          <v-icon>mdi-laptop</v-icon>
+          <v-icon>mdi-paw</v-icon>
           <span>affiliation</span>
+        </v-btn>
+        <v-btn @click="$emit('navigate', 'works')">
+          <v-icon>mdi-laptop</v-icon>
+          <span>Works</span>
         </v-btn>
         <v-btn @click="$emit('navigate', 'skills')">
           <v-icon>mdi-pen-plus</v-icon>
@@ -49,8 +53,9 @@ export default {
         case 0: return '#1E1F22'
         case 1: return 'teal'
         case 2: return 'brown'
-        case 3: return 'indigo'
-        case 4: return 'blue-grey'
+        case 3: return '#83ADEA'
+        case 4: return 'indigo'
+        case 5: return 'blue-grey'
         default: return 'blue-grey'
       }
     },

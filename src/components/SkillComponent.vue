@@ -1,6 +1,20 @@
 <template>
   <div class="skill-container" id="skills">
     <div class="title text-bold lg">Skills</div>
+
+    <v-card class="card">
+      <v-toolbar color="transparent">
+        <v-toolbar-title text="保有資格"/>
+      </v-toolbar>
+      <div class="card-body">
+        <v-card-text class="card-text">
+          <ul>
+            <li class="md">基本情報技術者試験（2023/4月）</li>
+            <li class="md">ITパスポート（2022/3月）</li>
+          </ul>
+        </v-card-text>
+      </div>
+    </v-card>
     <v-expansion-panels
         v-model="panel"
         multiple
@@ -217,5 +231,14 @@ export default {
   justify-content: flex-end;
   flex-direction: column;
   flex: 0 1 120px;
+}
+
+.card {
+  width: 50%;
+  margin: 16px auto;
+}
+
+.card-body {
+  padding: 0 16px;
 }
 </style>

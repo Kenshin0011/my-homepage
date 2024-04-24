@@ -2,7 +2,7 @@
   <div class="skill-container" id="skills">
     <div class="title text-bold lg">Skills</div>
 
-    <v-card class="card">
+    <v-card class="card" :class="{ 'mobile-card': isMobileScreen }">
       <v-toolbar color="transparent">
         <v-toolbar-title text="保有資格"/>
       </v-toolbar>
@@ -60,6 +60,9 @@
 
 <script>
 export default {
+  props: {
+    isMobileScreen: { type: Boolean, required: true },
+  },
   data() {
     return {
       panel: [0, 1, 2],
@@ -236,6 +239,10 @@ export default {
 .card {
   width: 50%;
   margin: 16px auto;
+}
+
+.mobile-card {
+  width: 90%;
 }
 
 .card-body {

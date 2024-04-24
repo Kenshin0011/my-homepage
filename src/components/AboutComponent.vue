@@ -119,14 +119,12 @@ export default {
 
 .card-body {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mobile-card-body {
   flex-direction: column;
-}
-
-.card-text {
-  width: 70%;
 }
 
 .img {

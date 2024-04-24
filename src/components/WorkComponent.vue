@@ -25,7 +25,7 @@ export default {
           title: `<span class="text-bold lg">Works</span>`,
         },
         {
-          prependAvatar: './public/images/imai-logo.png',
+          prependAvatar: './public/images/works/imai-logo.png',
           title: `<br><span class="text-bold lg work-title">今井倫太研究室（2022/2〜現在）</span>`,
           subtitle: `<span class="text-primary md">研究</span>
                     <br>&mdash; LLMを用いて対話において解釈の齟齬が生じるような聞き逃し発話を特定し、日常対話において応用する研究をしている
@@ -36,7 +36,7 @@ export default {
         },
         { type: 'divider', inset: true },
         {
-          prependAvatar: './public/images/sdb_logo.png',
+          prependAvatar: './public/images/works/sdb_logo.png',
           title: `<br><span class="text-bold lg">ソーシャルデータバンク株式会社（2023/11〜現在）</span>`,
           subtitle: `<span class="text-primary md">長期開発インターン</span>
                     <br>&mdash; 会議室予約・出社管理システム「ワクマネ」のフロント・バックエンドの開発をしている（Vue.js, Laravel）
@@ -44,7 +44,7 @@ export default {
         },
         { type: 'divider', inset: true },
         {
-          prependAvatar: './public/images/town-logo.jpg',
+          prependAvatar: './public/images/works/town-logo.jpg',
           title: `<br><span class="text-bold lg">TOWN株式会社（2022/8〜2022/9）</span>`,
           subtitle: `<span class="text-primary md">短期開発インターン</span>
                     <br>&mdash; GoogleMapのAPIを用いて、駐輪場を検索する地図アプリの作成をした（jQuery, CakePHP...）<br><br>`,

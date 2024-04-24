@@ -31,10 +31,10 @@ export default {
   data () {
     return {
       slides: [
-        './images/1.JPG',
-        './images/2.JPG',
-        './images/3.jpg',
-        './images/4.jpg',
+        './images/home/1.JPG',
+        './images/home/2.JPG',
+        './images/home/3.jpg',
+        './images/home/4.jpg',
       ],
     }
   },

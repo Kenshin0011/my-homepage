@@ -20,7 +20,7 @@
         multiple
     >
       <v-expansion-panel>
-        <v-expansion-panel-title>よく使う</v-expansion-panel-title>
+        <v-expansion-panel-title>よく使う/使っていた</v-expansion-panel-title>
         <v-expansion-panel-text>
           <div class="skills">
             <div v-for="skill in mySkills" :key="skill" class="skill">

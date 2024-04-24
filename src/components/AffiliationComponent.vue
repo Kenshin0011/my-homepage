@@ -57,7 +57,7 @@ export default {
 
 <style scoped>
 .affiliation-container {
-  padding: 16px;
+  padding: 90px 16px;
   background-color: white;
 }
 </style>

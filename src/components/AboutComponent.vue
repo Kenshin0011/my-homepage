@@ -92,7 +92,7 @@ export default {
 <style scoped>
 .about-container {
   width: 100%;
-  padding: 16px;
+  padding: 90px 16px;
 }
 
 .title {

@@ -212,7 +212,7 @@ export default {
 
 <style scoped>
 .skill-container {
-  padding: 32px;
+  padding: 90px 32px;
 }
 
 .title {

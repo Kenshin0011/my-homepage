@@ -51,127 +51,127 @@ export default {
       panel: [0, 1, 2],
       mySkills: [
         {
-          img: '../../public/images/skills/vue.png',
+          img: '../../../public/images/skills/vue.png',
           title: 'Vue.js',
         },
         {
-          img: '../../public/images/skills/laravel.png',
+          img: '../../../public/images/skills/laravel.png',
           title: 'Laravel',
         },
         {
-          img: '../../public/images/skills/html.png',
+          img: '../../../public/images/skills/html.png',
           title: 'html',
         },
         {
-          img: '../../public/images/skills/css.png',
+          img: '../../../public/images/skills/css.png',
           title: 'css',
         },
         {
-          img: '../../public/images/skills/javascript.png',
+          img: '../../../public/images/skills/javascript.png',
           title: 'javascript',
         },
         {
-          img: '../../public/images/skills/c.png',
+          img: '../../../public/images/skills/c.png',
           title: 'C言語',
         },
         {
-          img: '../../public/images/skills/python.png',
+          img: '../../../public/images/skills/python.png',
           title: 'python',
         },
         {
-          img: '../../public/images/skills/flask.png',
+          img: '../../../public/images/skills/flask.png',
           title: 'flask',
         },
         {
-          img: '../../public/images/skills/gpt.png',
+          img: '../../../public/images/skills/gpt.png',
           title: 'GPT API',
         },
         {
-          img: '../../public/images/skills/mysql.png',
+          img: '../../../public/images/skills/mysql.png',
           title: 'mysql',
         },
         {
-          img: '../../public/images/skills/java.png',
+          img: '../../../public/images/skills/java.png',
           title: 'Java',
         },
       ],
       normalSkills: [
         {
-          img: '../../public/images/skills/slack-api.png',
+          img: '../../../public/images/skills/slack-api.png',
           title: 'Slack API',
         },
         {
-          img: '../../public/images/skills/docker.png',
+          img: '../../../public/images/skills/docker.png',
           title: 'Docker',
         },
         {
-          img: '../../public/images/skills/unity.png',
+          img: '../../../public/images/skills/unity.png',
           title: 'Unity',
         },
         {
-          img: '../../public/images/skills/aws.png',
+          img: '../../../public/images/skills/aws.png',
           title: 'AWS',
         },
         {
-          img: '../../public/images/skills/aws-lambda.png',
+          img: '../../../public/images/skills/aws-lambda.png',
           title: 'Lambda',
         },
         {
-          img: '../../public/images/skills/figma.png',
+          img: '../../../public/images/skills/figma.png',
           title: 'Figma',
         },
         {
-          img: '../../public/images/skills/fast-api.png',
+          img: '../../../public/images/skills/fast-api.png',
           title: 'Fast API',
         },
         {
-          img: '../../public/images/skills/jupyter.png',
+          img: '../../../public/images/skills/jupyter.png',
           title: 'Jupyter',
         },
         {
-          img: '../../public/images/skills/langchain.png',
+          img: '../../../public/images/skills/langchain.png',
           title: 'Lang Chain',
         },
         {
-          img: '../../public/images/skills/jquery.png',
+          img: '../../../public/images/skills/jquery.png',
           title: 'jQuery',
         },
         {
-          img: '../../public/images/skills/cakephp.png',
+          img: '../../../public/images/skills/cakephp.png',
           title: 'Cake PHP',
         },
         {
-          img: '../../public/images/skills/dynamodb.png',
+          img: '../../../public/images/skills/dynamodb.png',
           title: 'Dynamo DB',
         },
         {
-          img: '../../public/images/skills/chroma.png',
+          img: '../../../public/images/skills/chroma.png',
           title: 'Chroma',
         },
         {
-          img: '../../public/images/skills/ngrok.png',
+          img: '../../../public/images/skills/ngrok.png',
           title: 'ngrok',
         },
         {
-          img: '../../public/images/skills/nginx.png',
+          img: '../../../public/images/skills/nginx.png',
           title: 'nginx',
         },
         {
-          img: '../../public/images/skills/apache.png',
+          img: '../../../public/images/skills/apache.png',
           title: 'Apache',
         },
       ],
       learningSkills: [
         {
-          img: '../../public/images/skills/react.png',
+          img: '../../../public/images/skills/react.png',
           title: 'React',
         },
         {
-          img: '../../public/images/skills/go.png',
+          img: '../../../public/images/skills/go.png',
           title: 'Go',
         },
         {
-          img: '../../public/images/skills/aws.png',
+          img: '../../../public/images/skills/aws.png',
           title: 'AWS',
         },
       ]

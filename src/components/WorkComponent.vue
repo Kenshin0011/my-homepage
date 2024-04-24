@@ -26,7 +26,7 @@ export default {
         },
         {
           prependAvatar: './public/images/works/imai-logo.png',
-          title: `<br><span class="text-bold lg work-title">今井倫太研究室（2022/2月〜現在）</span>`,
+          title: `<br><span class="text-bold lg work-title">今井倫太研究室（2023/2月〜現在）</span>`,
           subtitle: `<span class="text-primary md">研究</span>
                     <br>&mdash; LLMを用いて対話において解釈の齟齬が生じるような聞き逃し発話を特定し、日常対話において応用する研究をしている
                     <br>&mdash; CRESTプロジェクトのオンライン体験会に向けシステムを実装中

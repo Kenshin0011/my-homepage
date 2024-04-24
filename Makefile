@@ -14,24 +14,3 @@ restart:
 	@make up
 ps:
 	docker-compose ps
-app:
-	docker-compose exec app bash
-cache:
-	docker-compose exec app composer dump-autoload -o
-	@make optimize
-	docker-compose exec app php artisan event:cache
-	docker-compose exec app php artisan view:cache
-npm:
-	@make npm-install
-npm-install:
-	docker-compose exec web npm install
-npm-dev:
-	docker-compose exec web npm run dev
-npm-watch:
-	docker-compose exec web npm run watch
-npm-watch-poll:
-	docker-compose exec web npm run watch-poll
-npm-hot:
-	docker-compose exec web npm run hot
-npm-build:
-	docker-compose exec web npm run build

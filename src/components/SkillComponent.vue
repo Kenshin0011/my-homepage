@@ -18,7 +18,7 @@
       </v-expansion-panel>
 
       <v-expansion-panel>
-        <v-expansion-panel-title>使ったことがある</v-expansion-panel-title>
+        <v-expansion-panel-title>使ったことがある/勉強中</v-expansion-panel-title>
         <v-expansion-panel-text>
           <div class="skills">
             <div v-for="skill in normalSkills" :key="skill" class="skill">
@@ -30,10 +30,10 @@
       </v-expansion-panel>
 
       <v-expansion-panel>
-        <v-expansion-panel-title>勉強中</v-expansion-panel-title>
+        <v-expansion-panel-title>愛用ツール</v-expansion-panel-title>
         <v-expansion-panel-text>
           <div class="skills">
-            <div v-for="skill in learningSkills" :key="skill" class="skill">
+            <div v-for="skill in likeTools" :key="skill" class="skill">
               <img :src="skill.img" alt="vue" width="40">
               <p>{{ skill.title }}</p>
             </div>
@@ -97,12 +97,24 @@ export default {
       ],
       normalSkills: [
         {
+          img: './images/skills/react.png',
+          title: 'React',
+        },
+        {
+          img: './images/skills/go.png',
+          title: 'Go',
+        },
+        {
           img: './images/skills/slack-api.png',
           title: 'Slack API',
         },
         {
           img: './images/skills/docker.png',
           title: 'Docker',
+        },
+        {
+          img: './images/skills/circleci.png',
+          title: 'CircleCI',
         },
         {
           img: './images/skills/unity.png',
@@ -161,18 +173,18 @@ export default {
           title: 'Apache',
         },
       ],
-      learningSkills: [
+      likeTools: [
         {
-          img: './images/skills/react.png',
-          title: 'React',
+          img: './images/skills/github.png',
+          title: 'Github',
         },
         {
-          img: './images/skills/go.png',
-          title: 'Go',
+          img: './images/skills/raycast.png',
+          title: 'Raycast',
         },
         {
-          img: './images/skills/aws.png',
-          title: 'AWS',
+          img: './images/skills/notion.png',
+          title: 'Notion',
         },
       ]
     }

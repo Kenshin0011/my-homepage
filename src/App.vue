@@ -6,7 +6,7 @@
           :is-mobile-screen="isMobileScreen"
       />
       <HomeComponent />
-      <BodyComponent/>
+      <BodyComponent />
     </div>
   </v-app>
 </template>

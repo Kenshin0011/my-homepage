@@ -28,7 +28,9 @@
               </v-timeline>
             </v-card-text>
             <div class="img">
-              <img src="../../public/images/profile.png" alt="profile" width="60%">
+              <v-avatar size="180px">
+                <img src="../../public/images/profile.png" alt="profile">
+              </v-avatar>
               <p class="name text-bold md">中西建心</p>
             </div>
           </div>

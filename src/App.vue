@@ -13,8 +13,8 @@
 
 <script>
 import HeaderComponent from './components/HeaderComponent.vue'
-import HomeComponent from "@/components/HomeComponent.vue";
-import BodyComponent from "@/components/BodyComponent.vue";
+import HomeComponent from "./components/HomeComponent.vue";
+import BodyComponent from "./components/BodyComponent.vue";
 
 export default {
   components: {

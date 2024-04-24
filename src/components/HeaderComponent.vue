@@ -16,9 +16,9 @@
           <v-icon>mdi-information</v-icon>
           <span>About</span>
         </v-btn>
-        <v-btn @click="$emit('navigate', 'works')">
+        <v-btn @click="$emit('navigate', 'affiliation')">
           <v-icon>mdi-laptop</v-icon>
-          <span>Work</span>
+          <span>affiliation</span>
         </v-btn>
         <v-btn @click="$emit('navigate', 'skills')">
           <v-icon>mdi-pen-plus</v-icon>

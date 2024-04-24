@@ -1,9 +1,11 @@
 <template>
-  <div class="work-container" id="works">
+  <div class="affiliation-container" id="affiliation">
     <v-list
         :items="items"
         lines="five"
         item-props
+        @click="openModal"
+        style="cursor: pointer"
     >
       <template v-slot:title="{ title }">
         <div v-html="title"></div>
@@ -12,21 +14,25 @@
         <div v-html="subtitle"></div>
       </template>
     </v-list>
+    <DetailModal header-text="a" contents-text="a" :is-shown="isShownModal" @close-detail-modal="closeModal"></DetailModal>
   </div>
 </template>
 
 <script>
+import DetailModal from "@/components/DetailModal.vue";
 
 export default {
+  components: {DetailModal},
   data() {
     return {
+      isShownModal: false,
       items: [
         {
-          title: `<span class="text-bold lg">Works</span>`,
+          title: `<span class="text-bold lg">Affiliation</span>`,
         },
         {
-          prependAvatar: './public/images/works/imai-logo.png',
-          title: `<br><span class="text-bold lg work-title">今井倫太研究室（2023/2月〜現在）</span>`,
+          prependAvatar: './public/images/affiliation/imai-logo.png',
+          title: `<br><span class="text-bold lg affiliation-title">今井倫太研究室（2023/2月〜現在）</span>`,
           subtitle: `<span class="text-primary md">研究</span>
                     <br>&mdash; LLMを用いて対話において解釈の齟齬が生じるような聞き逃し発話を特定し、日常対話において応用する研究をしている
                     <br>&mdash; CRESTプロジェクトのオンライン体験会に向けシステムを実装中
@@ -36,28 +42,36 @@ export default {
         },
         { type: 'divider', inset: true },
         {
-          prependAvatar: './public/images/works/sdb_logo.png',
+          prependAvatar: './public/images/affiliation/sdb_logo.png',
           title: `<br><span class="text-bold lg">ソーシャルデータバンク株式会社（2023/11月〜現在）</span>`,
-          subtitle: `<span class="text-primary md">長期開発インターン</span>
+          subtitle: `<span class="text-primary md">長期開発インターンシップ</span>
                     <br>&mdash; 会議室予約・出社管理システム「ワクマネ」のフロント・バックエンドの開発をしている（Vue.js, Laravel）
                     <br>&mdash; 2024/4月からRAGを用いたSlackでの質問応答App「ai-manual」のプロジェクトにも参加<br><br>`,
         },
         { type: 'divider', inset: true },
         {
-          prependAvatar: './public/images/works/town-logo.jpg',
+          prependAvatar: './public/images/affiliation/town-logo.jpg',
           title: `<br><span class="text-bold lg">TOWN株式会社（2022/9月の数日間）</span>`,
-          subtitle: `<span class="text-primary md">短期開発インターン</span>
+          subtitle: `<span class="text-primary md">短期開発インターンシップ</span>
                     <br>&mdash; GoogleMapのAPIを用いて、駐輪場を検索する地図アプリの作成をした（jQuery, CakePHP...）<br><br>`,
         },
         { type: 'divider', inset: true },
       ],
+    }
+  },
+  methods: {
+    openModal() {
+      this.isShownModal = !this.isShownModal;
+    },
+    closeModal() {
+      this.isShownModal = !this.isShownModal;
     }
   }
 }
 </script>
 
 <style scoped>
-.work-container {
+.affiliation-container {
   padding: 16px;
   background-color: white;
 }

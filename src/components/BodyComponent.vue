@@ -1,18 +1,18 @@
 <template>
   <AboutComponent/>
-  <WorkComponent/>
+  <AffiliationComponent/>
   <SkillComponent/>
 </template>
 
 <script>
 import AboutComponent from "@/components/AboutComponent.vue";
-import WorkComponent from "@/components/WorkComponent.vue";
+import AffiliationComponent from "@/components/AffiliationComponent.vue";
 import SkillComponent from "@/components/SkillComponent.vue";
 
 export default {
   components: {
     SkillComponent,
-    WorkComponent,
+    AffiliationComponent,
     AboutComponent
   },
 }

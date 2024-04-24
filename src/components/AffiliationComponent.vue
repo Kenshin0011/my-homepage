@@ -4,8 +4,6 @@
         :items="items"
         lines="five"
         item-props
-        @click="openModal"
-        style="cursor: pointer"
     >
       <template v-slot:title="{ title }">
         <div v-html="title"></div>
@@ -14,18 +12,13 @@
         <div v-html="subtitle"></div>
       </template>
     </v-list>
-    <DetailModal header-text="a" contents-text="a" :is-shown="isShownModal" @close-detail-modal="closeModal"></DetailModal>
   </div>
 </template>
 
 <script>
-import DetailModal from "@/components/DetailModal.vue";
-
 export default {
-  components: {DetailModal},
   data() {
     return {
-      isShownModal: false,
       items: [
         {
           title: `<span class="text-bold lg">Affiliation</span>`,
@@ -59,14 +52,6 @@ export default {
       ],
     }
   },
-  methods: {
-    openModal() {
-      this.isShownModal = !this.isShownModal;
-    },
-    closeModal() {
-      this.isShownModal = !this.isShownModal;
-    }
-  }
 }
 </script>
 

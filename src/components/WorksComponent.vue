@@ -23,7 +23,11 @@
 
           <v-card-text>
             <ul class="card-message sm">
-              <li v-for="(item, index) in formattedMessage(card.content)" :key="index" v-html="item"></li>
+              <li v-for="(line, index) in formattedMessage(card.content)" :key="index">
+                <template v-for="(part, partIndex) in line.parts" :key="partIndex">
+                  <span v-if="part.type === 'text'" v-text="part.text"></span>
+                </template>
+              </li>
             </ul>
           </v-card-text>
 
@@ -93,9 +97,10 @@ export default {
   },
   methods: {
     formattedMessage(message) {
-      // 各行を改行で分割し、複数の置き換えを行う
       return message.split('\n').map(line => {
-        return line;
+        const parts = []; // この配列を使ってテキストを分割する
+        parts.push({ type: 'text', text: line }); // すべての行をテキストとして扱う
+        return { parts };
       });
     }
   }

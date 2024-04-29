@@ -22,7 +22,12 @@
                       </div>
                       <div class="text-bold sm">{{ message.school }}</div>
                       <ul class="card-message sm">
-                        <li v-for="(item, index) in formattedMessage(message.message)" :key="index" v-html="item"></li>
+                        <li v-for="(line, index) in formattedMessage(message.message)" :key="index">
+                          <span v-for="(part, partIndex) in line.parts" :key="partIndex">
+                            <a v-if="part.type === 'link'" :href="part.url" v-text="part.text"></a>
+                            <span v-else v-text="part.text"></span>
+                          </span>
+                        </li>
                       </ul>
                     </div>
                   </v-timeline-item>
@@ -78,16 +83,24 @@ export default {
   methods: {
     formattedMessage(message) {
       const links = {
-        "第29回日本数学オリンピック": '<a href="https://www.imojp.org/archive/mo2019/jmo2019/yosen_result.html">第29回日本数学オリンピック</a>',
-        "今井倫太研究室": '<a href="https://www.ailab.ics.keio.ac.jp/">今井倫太研究室</a>',
+        "第29回日本数学オリンピック": 'https://www.imojp.org/archive/mo2019/jmo2019/yosen_result.html',
+        "今井倫太研究室": 'https://www.ailab.ics.keio.ac.jp/'
       };
 
-      // 各行を改行で分割し、複数の置き換えを行う
       return message.split('\n').map(line => {
+        const parts = [];
         Object.keys(links).forEach(key => {
-          line = line.replace(new RegExp(key, 'g'), links[key]);
+          const splitText = line.split(key);
+          splitText.forEach((text, index) => {
+            if (text !== "") {
+              parts.push({ type: 'text', text });
+            }
+            if (index < splitText.length - 1) {
+              parts.push({ type: 'link', text: key, url: links[key] });
+            }
+          });
         });
-        return line;
+        return { parts };
       });
     }
   }

@@ -30,10 +30,12 @@
               </li>
             </ul>
           </v-card-text>
-
           <a v-if="card.title === 'ワクマネ'" href="https://zenn.dev/kenshin0011/articles">
             <img src="https://zenn.badge.nikaera.com/s/kenshin0011/articles?style=plastic" alt="kenshin0011 articles" />
           </a>
+            <div v-if="card.title === 'ワクマネ'">
+                <a href="https://lp.wakumane.jp/">LPはこちら</a>
+            </div>
 
           <v-card-subtitle v-if="card.github" class="pt-4" style="padding-bottom: 8px">
             <v-btn

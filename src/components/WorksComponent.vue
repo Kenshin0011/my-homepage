@@ -97,6 +97,14 @@ export default {
                         '4択問題演習、英文トレーニング、ランダム単語バトルの3モードある\n' +
                         'flask-sqlalchemyで管理しており、ユーザのランキングも競える',
                 },
+                {
+                    img: 'chat_ui.png',
+                    title: 'チャットUI',
+                    where: '研究室',
+                    content: '外部の方々に対して研究のオンライン体験会を行うために作成したチャット風UI\n' +
+                        '自分の勉強のためにReactで作成',
+                    github: 'https://github.com/Kenshin0011/chat_ui_react',
+                },
             ],
         }
     },

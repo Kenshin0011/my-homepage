@@ -43,7 +43,7 @@ export default {
             { text: "・2024/3/15" },
             { text: "情報処理学会第86回全国大会", link: "https://www.ipsj.or.jp/event/taikai/86/WEB/data/pdf/2W-01.html" },
             { text: "・2024/5/30" },
-            { text: "人工知能学会全国大会（第38回）"},
+            { text: "人工知能学会全国大会（第38回）", link: "https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_3T1OS6a02/_pdf/-char/ja"},
           ]
         },
         {
@@ -52,7 +52,7 @@ export default {
           subtitle: "長期開発インターンシップ",
           content: [
             { text: "会議室予約・出社管理システム「ワクマネ」のフロント・バックエンドの開発をしている（Vue.js, Laravel）" },
-            { text: "2024/4月からRAGを用いたSlackでの質問応答App「ai-manual」のプロジェクトにも参加" },
+            { text: "2024/7月からジャズピアノの音ゲーアプリJazz-Stepsの開発をしている（Nuxt.js, Laravel）" },
           ],
         },
         {

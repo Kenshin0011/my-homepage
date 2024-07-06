@@ -89,17 +89,23 @@ export default {
 
       return message.split('\n').map(line => {
         const parts = [];
+        let remainingLine = line;
+
         Object.keys(links).forEach(key => {
-          const splitText = line.split(key);
-          splitText.forEach((text, index) => {
-            if (text !== "") {
-              parts.push({ type: 'text', text });
+          let splitIndex;
+          while ((splitIndex = remainingLine.indexOf(key)) !== -1) {
+            if (splitIndex > 0) {
+              parts.push({ type: 'text', text: remainingLine.substring(0, splitIndex) });
             }
-            if (index < splitText.length - 1) {
-              parts.push({ type: 'link', text: key, url: links[key] });
-            }
-          });
+            parts.push({ type: 'link', text: key, url: links[key] });
+            remainingLine = remainingLine.substring(splitIndex + key.length);
+          }
         });
+
+        if (remainingLine) {
+          parts.push({ type: 'text', text: remainingLine });
+        }
+
         return { parts };
       });
     }

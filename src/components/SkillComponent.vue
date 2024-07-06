@@ -100,6 +100,10 @@ export default {
           title: 'flask',
         },
         {
+          img: './images/skills/fast-api.png',
+          title: 'Fast API',
+        },
+        {
           img: './images/skills/gpt.png',
           title: 'GPT API',
         },
@@ -111,11 +115,19 @@ export default {
           img: './images/skills/java.png',
           title: 'Java',
         },
+        {
+          img: './images/skills/docker.png',
+          title: 'Docker',
+        },
       ],
       normalSkills: [
         {
           img: './images/skills/react.png',
           title: 'React',
+        },
+        {
+          img: './images/skills/nuxt.png',
+          title: 'Nuxt.js',
         },
         {
           img: './images/skills/go.png',
@@ -124,10 +136,6 @@ export default {
         {
           img: './images/skills/slack-api.png',
           title: 'Slack API',
-        },
-        {
-          img: './images/skills/docker.png',
-          title: 'Docker',
         },
         {
           img: './images/skills/circleci.png',
@@ -150,10 +158,6 @@ export default {
           title: 'Figma',
         },
         {
-          img: './images/skills/fast-api.png',
-          title: 'Fast API',
-        },
-        {
           img: './images/skills/jupyter.png',
           title: 'Jupyter',
         },
@@ -168,6 +172,10 @@ export default {
         {
           img: './images/skills/cakephp.png',
           title: 'Cake PHP',
+        },
+        {
+          img: './images/skills/postgre.png',
+          title: 'PostgreSQL',
         },
         {
           img: './images/skills/dynamodb.png',

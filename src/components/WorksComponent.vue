@@ -31,7 +31,9 @@
                     <a v-if="card.title === 'ワクマネ'" href="https://zenn.dev/kenshin0011/articles">
                         <img src="https://zenn.badge.nikaera.com/s/kenshin0011/articles?style=plastic" alt="kenshin0011 articles" />
                     </a>
-
+                    <a v-if="card.title === 'Jazz-Steps'" href="https://jazz-steps.com/">
+                      https://jazz-steps.com/
+                    </a>
                     <v-card-subtitle v-if="card.github" class="pt-4" style="padding-bottom: 8px">
                         <v-btn
                             icon="mdi-github"
@@ -53,15 +55,6 @@ export default {
         return {
             cards: [
                 {
-                    img: 'kagu.png',
-                    title: '家具レンタルシステム',
-                    where: '授業',
-                    content: 'Javaのみで作成\n' +
-                        '制作期間：約2週間\n' +
-                        '1人で2000行程度のコードを書いたため、自信に繋がった初めてのシステム',
-                    github: 'https://github.com/Kenshin0011/Probfinal',
-                },
-                {
                     img: 'wakumane.png',
                     title: 'ワクマネ',
                     where: '長期インターンシップ',
@@ -71,22 +64,25 @@ export default {
                         '単体・機能テストやN+1問題など苦労した点もあったが、入社日以降メンバーの中で一番コードを書いたこともあり、成果発表会で過去最高点でMVPを受賞',
                 },
                 {
-                    img: 'portfolio.png',
-                    title: 'ポートフォリオ',
-                    where: '個人開発',
-                    content: 'Vue.jsで作成\n' +
-                        '制作期間：約3日間\n' +
-                        'htmlでも良かったが、0からVueプロジェクトを作ってみたかった\n' +
-                        'Vuetifyを使ってスタイルを整えたかったことも要因の１つ',
-                    github: 'https://github.com/Kenshin0011/my-homepage',
+                    img: 'jazz.png',
+                    title: 'Jazz-Steps',
+                    where: '長期インターンシップ',
+                    content: '株式会社 Freedom Freaksのプロダクト\n' +
+                        'Nuxt.jsとLaravel\n' +
+                        'フロント：アトミックデザイン\n' +
+                        'バック：ドメイン駆動設計とオニオンアーキテクチャ\n' +
+                        '社員にレビューしてもらうために押し入り参加'
                 },
                 {
-                    img: 'ai-manual.png',
-                    title: 'ai-manual',
-                    where: '長期インターンシップ',
-                    content: 'RAGを用いたSlackでの質問応答App\n' +
-                        'ソーシャルデータバンク株式会社のプロダクトの1つ\n' +
-                        'Slack APIやRAGの性能に関する調査をやっていく予定',
+                  img: 'chat_ui.png',
+                  title: 'チャットApp',
+                  where: '研究室',
+                  content: '外部の方々に対して研究のオンライン体験会を行うために作成したZoom形式のチャットApp\n' +
+                    'React×FastAPI×PostgreSQL×Dockerで作成\n' +
+                    'GithubPages×Renderでデプロイ\n' +
+                    'ログインや対話履歴の保持のためにDBを使用\n' +
+                    '01で実装する力が身についた',
+                  github: 'https://github.com/Kenshin0011/chat_ui_react',
                 },
                 {
                     img: 'screw.png',
@@ -98,12 +94,23 @@ export default {
                         'flask-sqlalchemyで管理しており、ユーザのランキングも競える',
                 },
                 {
-                    img: 'chat_ui.png',
-                    title: 'チャットApp',
-                    where: '研究室',
-                    content: '外部の方々に対して研究のオンライン体験会を行うために作成したチャットApp\n' +
-                        '自分の勉強のためにフロントはReact、バックはFastAPIで作成',
-                    github: 'https://github.com/Kenshin0011/chat_ui_react',
+                  img: 'kagu.png',
+                  title: '家具レンタルシステム',
+                  where: '個人開発',
+                  content: 'Javaのみで作成\n' +
+                    '制作期間：約2週間\n' +
+                    '1人で2000行程度のコードを書いたため、自信に繋がった初めてのシステム',
+                  github: 'https://github.com/Kenshin0011/Probfinal',
+                },
+                {
+                  img: 'portfolio.png',
+                  title: 'ポートフォリオ',
+                  where: '個人開発',
+                  content: 'Vue.js×Dockerで作成\n' +
+                    '制作期間：約3日間\n' +
+                    'htmlでも良かったが、0からVueプロジェクトを作ってみたかった\n' +
+                    'Vuetifyを使ってスタイルを整えたかったことも要因の１つ',
+                  github: 'https://github.com/Kenshin0011/my-homepage',
                 },
             ],
         }

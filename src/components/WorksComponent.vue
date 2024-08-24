@@ -81,8 +81,9 @@ export default {
                     'React×FastAPI×PostgreSQL×Dockerで作成\n' +
                     'GithubPages×Renderでデプロイ\n' +
                     'ログインや対話履歴の保持のためにDBを使用\n' +
+                    'i18nによる多言語対応\n' +
                     '01で実装する力が身についた',
-                  github: 'https://github.com/Kenshin0011/chat_ui_react',
+                  github: 'https://github.com/imai-laboratory/SCAINs_pseudo_chat',
                 },
                 {
                     img: 'screw.png',
